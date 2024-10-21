@@ -1,0 +1,142 @@
+.mainText-content{
+    
+  
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    background-color: #302e2e;
+    border-radius: 22px;
+    margin-top: 100px;
+    display: flex;
+ 
+
+}
+.mainText-content>h1{
+    color: #ffffff;
+    font-size:32px;
+    font-weight: bold;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.recipe-card>img{
+    width: 100%;
+    object-fit:fill;
+    border-radius: 22px;
+}
+ 
+ 
+.recipe-card>p{
+    color: hsla(0, 0%, 100%, 0.829);
+    font-size: 24px;
+    font-family: monospace;
+    padding: 20px;
+}
+
+.receipe-title{
+    color: #ff00aa;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+
+}
+
+.recipe-card-group{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin-top: 10px;
+    background-color: #302e2e;
+    border-radius: 22px;
+   
+}
+.card-body{
+    margin:10px;
+}
+.card-body>h2{
+    color: #ffffff;
+    font-size: 24px;
+    font-family: serif;
+   
+}
+
+.card-body>.body{
+    background-color: #201f1f;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 22px;
+
+}
+.body>img{
+    width: 40%;
+    object-fit: cover;
+    border-radius: 22px;
+
+}
+.Ingredients-text>li{
+    color: #ffffff;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    text-wrap: wrap;
+}
+
+.Instruction-text>li{
+    color: #ffffff;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 
+Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    text-wrap: wrap;
+    list-style: decimal;
+}
+
+.body>h2{
+    text-shadow: 2px 2px 2px  rgb(255, 255, 255);
+    color: #ff00aa;
+    font-family: Arial, Helvetica, sans-serif; 
+    text-decoration: dotted;
+    border: 5px solid #a19393;
+    padding: 10px;
+    border-radius:  15px;
+    border-top: rgb(0, 0, 0);
+    
+}
+   
+   
+   
+      .footer {
+    background-color: #333;
+    color: #dd2ca2;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section a img {
+    width: 24px;
+    margin: 0 5px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+   
+   
