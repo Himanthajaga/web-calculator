@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delicious Eats--Receipies</title>
+    <title>ChocoLK-Cakes</title>
     <link rel="icon" href="assets/indexlogoPNG.png" type="image/png">
     <link rel="stylesheet" href="/style/cakes.css">
+    <link rel="stylesheet" href="/style/common.css">
     <link rel="stylesheet" href="/style/index.css">
     <link rel="stylesheet" href="/style/responsive.css">
     <!-- //set image as favicon -->
 <link rel="icon" href="/assets/choco/images (10).jpeg" type="image/png">
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 </head>
 <body>
-        <article class="home-content">
+    <main>
+     <header>
+        <nav class="navbar">
+          <img src="/assets/choco/images (10).jpeg" alt="logo" class="logo" />
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/cakes.html" class="active">Cakes</a></li>
+            <li><a href="/pages/chocolate.html">Chocolates</a></li>
+            <li><a href="/pages/gift.html">Gifts</a></li>
+            <li><a href="/pages/contact.html">Contact Us</a></li>
+            <li>
+              <a style="font-weight: bolder" href="/pages/login.html">Log In</a>
+            </li>
+          </ul>
+        </nav>
+        <i id="menu" class="fa-solid fa-bars"></i>
+      </header>
 
-            <nav class="navbar">
-        <img src="/assets/choco/images (10).jpeg" alt="logo" class="logo" />
+      <div class="menu-panel" id="menu-panel-id">
+        <button id="btn-close" class="close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
         <ul>
-          <li><a href="/index.html" class="active">Home</a></li>
-          <li><a href="/pages/cakes.html">Cakes</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/cakes.html" class="active">Cakes</a></li>
           <li><a href="/pages/chocolate.html">Chocolates</a></li>
           <li><a href="/pages/gift.html">Gifts</a></li>
           <li><a href="/pages/contact.html">Contact Us</a></li>
@@ -26,9 +49,10 @@
             <a style="font-weight: bolder" href="/pages/login.html">Log In</a>
           </li>
         </ul>
-      </nav>
+      </div>
+      
 
-
+<article>
             <div class="mainText-content">
                 <h1>CHOCOLATE CAKE <span style="color:  #ff00aa;">RECIPES</span></h1>
                 <div class="recipe-card">
@@ -50,7 +74,7 @@
                 <div class="card-body">
                     <h2>1. Fluffy Pancakes</h2>
                     <div class="body">
-                        <img src="/assets/receipeImg/fluffy-pancakes-feature.jpg" alt="recipe1">
+                        <img src="/assets/choco/carrot-cake-loaf-2.jpg" alt="recipe1">
 
                             <h2>Ingredients</h2>
                                 <ul class="Ingredients-text">
@@ -229,10 +253,10 @@
         </div>
         <div class="footer-section social">
           <h3>Follow Us</h3>
-          <a href="#"><img src="assets/facebook-icon.png" alt="Facebook" /></a>
-          <a href="#"><img src="assets/twitter-icon.png" alt="Twitter" /></a>
+          <a href="#"><img src="/assets/choco/fb.png" alt="Facebook" /></a>
+          <a href="#"><img src="/assets/choco/WhatsApp.svg.webp" alt="Whatssapp" /></a>
           <a href="#"
-            ><img src="assets/instagram-icon.png" alt="Instagram"
+            ><img src="/assets/choco/github.png" alt="Github"
           /></a>
         </div>
       </div>
@@ -240,5 +264,17 @@
         <p>&copy; 2023 Delicious Eats. All rights reserved.</p>
       </div>
     </footer>
+     <script>
+      const menu = document.getElementById("menu");
+      const menuPanel = document.getElementById("menu-panel-id");
+      const btnClose = document.getElementById("btn-close");
+
+      menu.addEventListener("click", () => {
+        menuPanel.classList.toggle("active");
+      });
+      btnClose.addEventListener("click", () => {
+        menuPanel.classList.remove("active");
+      });
+    </script>
 </body>
 </html>
